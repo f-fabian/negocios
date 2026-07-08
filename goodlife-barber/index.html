@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoodLife Barber Shop | Corte fino há 9 anos</title>
+    <meta
+      name="description"
+      content="GoodLife Barber Shop em Lisboa. Corte clássico, barba, afeitado tradicional e ambiente premium com personalidade urbana."
+    />
+    <meta
+      name="keywords"
+      content="barbearia, corte masculino, barba, afeitado, lisboa, barber shop, goodlife"
+    />
+    <meta name="theme-color" content="#142f28" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="GoodLife Barber Shop" />
+    <meta
+      property="og:description"
+      content="Barbearia premium com 9 anos de experiência, ambiente old school e vibração urbana."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#142f28",
+              cream: "#e4ecdd",
+              coal: "#121212",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-cream text-brand font-sans antialiased">
+    <header class="sticky top-0 z-50 border-b border-brand/20 bg-cream/90 backdrop-blur">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#top" class="flex items-center gap-3">
+          <img src="img/logo.jpg" alt="GoodLife Barber Shop" class="h-12 w-12 rounded-full object-cover shadow-lg" />
+          <span class="text-lg font-semibold tracking-[0.3em] uppercase">GoodLife</span>
+        </a>
+
+        <button
+          id="menuButton"
+          class="inline-flex items-center rounded-full border border-brand/20 p-2 transition-all duration-300 hover:scale-105 hover:bg-brand hover:text-cream md:hidden"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+
+        <div id="menu" class="hidden items-center gap-6 text-sm font-medium uppercase tracking-[0.24em] md:flex">
+          <a href="#sobre" class="transition-all duration-300 hover:text-brand/70">Sobre</a>
+          <a href="#servicos" class="transition-all duration-300 hover:text-brand/70">Serviços</a>
+          <a href="#galeria" class="transition-all duration-300 hover:text-brand/70">Galeria</a>
+          <a href="#contacto" class="transition-all duration-300 hover:text-brand/70">Contacto</a>
+        </div>
+      </nav>
+
+      <div id="mobileMenu" class="border-t border-brand/20 bg-cream px-4 py-3 shadow-lg md:hidden">
+        <div class="flex flex-col gap-3 text-sm font-medium uppercase tracking-[0.24em]">
+          <a href="#sobre" class="rounded-full px-3 py-2 transition-all duration-300 hover:bg-brand hover:text-cream">Sobre</a>
+          <a href="#servicos" class="rounded-full px-3 py-2 transition-all duration-300 hover:bg-brand hover:text-cream">Serviços</a>
+          <a href="#galeria" class="rounded-full px-3 py-2 transition-all duration-300 hover:bg-brand hover:text-cream">Galeria</a>
+          <a href="#contacto" class="rounded-full px-3 py-2 transition-all duration-300 hover:bg-brand hover:text-cream">Contacto</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-16">
+        <div class="flex flex-col justify-center">
+          <div class="mb-5 inline-flex w-fit items-center rounded-full border border-brand/20 bg-white/70 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] shadow-sm">
+            9 anos a cortar fino
+          </div>
+          <h1 class="font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl">
+            Old school com <span class="text-brand/80">attitude urbana</span>.
+          </h1>
+          <p class="mt-5 max-w-xl text-lg leading-8 text-brand/80 sm:text-xl">
+            A GoodLife Barber Shop mistura tradição de barbearia, ambiente de bar e personalidade irreverente. Aqui, cada corte é um ritual com presença, precisão e identidade.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="https://wa.me/351912345678?text=Olá%2C%20gostaria%20de%20reservar%20um%20turno."
+              class="inline-flex items-center justify-center rounded-full bg-brand px-7 py-4 text-base font-semibold text-cream shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:bg-brand/90"
+            >
+              Reservar Turno por WhatsApp
+            </a>
+            <a
+              href="#servicos"
+              class="inline-flex items-center justify-center rounded-full border border-brand/20 px-7 py-4 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:bg-brand hover:text-cream"
+            >
+              Ver Serviços
+            </a>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-4 text-sm uppercase tracking-[0.25em] text-brand/70">
+            <span class="rounded-full border border-brand/10 bg-white/60 px-3 py-2">Barberos tatuados</span>
+            <span class="rounded-full border border-brand/10 bg-white/60 px-3 py-2">Ambiente de bar</span>
+            <span class="rounded-full border border-brand/10 bg-white/60 px-3 py-2">Estilo premium</span>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute inset-0 -z-10 rounded-[2rem] bg-brand/10 blur-3xl"></div>
+          <img
+            src="img/local-1.png"
+            alt="Interior da GoodLife Barber Shop"
+            class="h-[520px] w-full rounded-[2rem] border border-brand/10 object-cover object-center shadow-2xl sm:h-[620px] lg:h-full"
+          />
+        </div>
+      </section>
+
+      <section id="sobre" class="bg-coal py-16 text-cream sm:py-20">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+          <div class="space-y-6">
+            <div class="inline-flex rounded-full border border-cream/20 px-4 py-2 text-sm uppercase tracking-[0.3em] text-cream/80">
+              A essência
+            </div>
+            <h2 class="font-serif text-3xl leading-tight sm:text-4xl">
+              Cláudio criou um espaço onde a tradição se encontra com a rua.
+            </h2>
+            <p class="text-lg leading-8 text-cream/80">
+              Há 9 anos, o GoodLife cresce com a seriedade de quem sabe cortar e a irreverência de quem não segue regras. O ambiente é de bar, com madeira escura, verde frio nas paredes, stickers pelo canto e uma equipa que traz personalidade a cada cliente.
+            </p>
+            <p class="text-lg leading-8 text-cream/80">
+              O resultado é uma barbearia para quem quer presença, detalhe e um corte que não passa despercebido.
+            </p>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <img src="img/claudio-9-anos.jpg" alt="Cláudio com os 9 anos do espaço" class="h-72 w-full rounded-[1.5rem] object-cover shadow-xl transition-all duration-300 hover:scale-[1.01]" />
+            <img src="img/claudio-trabajando.jpg" alt="Barbeiro a trabalhar" class="h-72 w-full rounded-[1.5rem] object-cover shadow-xl transition-all duration-300 hover:scale-[1.01]" />
+            <img src="img/diogo-cruz.jpg" alt="Diogo Cruz a trabalhar" class="h-72 w-full rounded-[1.5rem] object-cover shadow-xl transition-all duration-300 hover:scale-[1.01] sm:col-span-2" />
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div class="mb-10 max-w-3xl">
+          <div class="mb-4 inline-flex rounded-full border border-brand/20 bg-white/60 px-4 py-2 text-sm uppercase tracking-[0.3em]">
+            Menu de serviços
+          </div>
+          <h2 class="font-serif text-3xl leading-tight sm:text-4xl">
+            Serviços feitos para quem quer presença e cuidado.
+          </h2>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-2">
+          <div class="rounded-[2rem] border border-brand/10 bg-white/70 p-8 shadow-lg backdrop-blur">
+            <div class="mb-6 flex items-center justify-between border-b border-brand/10 pb-4">
+              <h3 class="font-serif text-2xl">Corte Clássico</h3>
+              <span class="text-xl font-semibold">€25</span>
+            </div>
+            <p class="text-base leading-7 text-brand/75">
+              Corte preciso, acabamento impecável e estilo preparado para o dia a dia ou para sair da rotina.
+            </p>
+          </div>
+
+          <div class="rounded-[2rem] border border-brand/10 bg-white/70 p-8 shadow-lg backdrop-blur">
+            <div class="mb-6 flex items-center justify-between border-b border-brand/10 pb-4">
+              <h3 class="font-serif text-2xl">Arreglo de Barba</h3>
+              <span class="text-xl font-semibold">€18</span>
+            </div>
+            <p class="text-base leading-7 text-brand/75">
+              Design de linha, volume e acabamento com atenção aos mínimos detalhes.
+            </p>
+          </div>
+
+          <div class="rounded-[2rem] border border-brand/10 bg-white/70 p-8 shadow-lg backdrop-blur">
+            <div class="mb-6 flex items-center justify-between border-b border-brand/10 pb-4">
+              <h3 class="font-serif text-2xl">Afeitado Tradicional</h3>
+              <span class="text-xl font-semibold">€22</span>
+            </div>
+            <p class="text-base leading-7 text-brand/75">
+              Toalha quente, espuma de qualidade e acabamento de barbearia clássica.
+            </p>
+          </div>
+
+          <div class="rounded-[2rem] border border-brand/10 bg-white/70 p-8 shadow-lg backdrop-blur">
+            <div class="mb-6 flex items-center justify-between border-b border-brand/10 pb-4">
+              <h3 class="font-serif text-2xl">Combo Imperial</h3>
+              <span class="text-xl font-semibold">€45</span>
+            </div>
+            <p class="text-base leading-7 text-brand/75">
+              Corte, barba e um ritual completo para quem quer sair com presença total.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="bg-brand py-16 text-cream sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div class="max-w-2xl">
+              <div class="mb-4 inline-flex rounded-full border border-cream/20 px-4 py-2 text-sm uppercase tracking-[0.3em] text-cream/80">
+                Estilo e identidade
+              </div>
+              <h2 class="font-serif text-3xl leading-tight sm:text-4xl">
+                Uma estética que mistura tradição, rua e atitude.
+              </h2>
+            </div>
+            <a href="#contacto" class="inline-flex w-fit items-center rounded-full border border-cream/20 px-5 py-3 text-sm font-semibold uppercase tracking-[0.25em] transition-all duration-300 hover:scale-[1.02] hover:bg-cream hover:text-brand">
+              Marcar presença
+            </a>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-3">
+            <img src="img/local-2.png" alt="Outro ângulo do espaço" class="h-72 w-full rounded-[1.5rem] object-cover object-center shadow-xl transition-all duration-300 hover:scale-[1.01] md:col-span-2" />
+            <img src="img/resultado.jpg" alt="Resultado de corte e barba" class="h-72 w-full rounded-[1.5rem] object-cover object-center shadow-xl transition-all duration-300 hover:scale-[1.01]" />
+            <img src="img/luis-pinto.jpg" alt="Luis Pinto a trabalhar" class="h-72 w-full rounded-[1.5rem] object-cover object-center shadow-xl transition-all duration-300 hover:scale-[1.01]" />
+            <div class="relative h-72 overflow-hidden rounded-[1.5rem] border border-cream/20 shadow-xl transition-all duration-300 hover:scale-[1.01] md:col-span-2">
+              <img src="img/goodlife-sucks.jpg" alt="Sticker GoodLife sucks" class="h-full w-full object-cover" />
+              <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+                <span class="rounded-full border border-cream/30 bg-black/50 px-5 py-3 text-lg font-semibold uppercase tracking-[0.25em]">
+                  GoodLife sucks
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="bg-[#0e0e0e] py-14 text-cream">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1fr_1fr] lg:px-8">
+        <div>
+          <h3 class="mb-4 font-serif text-2xl">GoodLife Barber Shop</h3>
+          <p class="max-w-sm leading-7 text-cream/80">
+            Um espaço de corte fino, presença e personalidade. Venha sentir a energia do old school com uma pegada urbana.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cream/70">Horários</h4>
+          <ul class="space-y-2 text-cream/80">
+            <li>Seg. a Sex.: 10:00 – 20:00</li>
+            <li>Sáb.: 10:00 – 18:00</li>
+            <li>Dom.: Fechado</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cream/70">Contacto</h4>
+          <ul class="space-y-2 text-cream/80">
+            <li><a href="https://wa.me/351912345678" class="transition-all duration-300 hover:text-cream">WhatsApp</a></li>
+            <li><a href="https://maps.google.com/?q=GoodLife+Barber+Shop" class="transition-all duration-300 hover:text-cream">Ver localização</a></li>
+            <li><a href="https://instagram.com" class="transition-all duration-300 hover:text-cream">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      menuButton?.addEventListener('click', () => {
+        const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      document.querySelectorAll('#mobileMenu a').forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuButton.setAttribute('aria-expanded', 'false');
+        });
+      });
+    </script>
+  </body>
+</html>
